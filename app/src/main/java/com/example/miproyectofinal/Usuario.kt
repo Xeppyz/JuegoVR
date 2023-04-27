@@ -9,10 +9,7 @@ import androidx.room.PrimaryKey
 
 @Entity(tableName = "usuario")
 data class Usuario (
-@PrimaryKey(true)
-val id: Int,
-val nombre: String,
-val apellido: String,
-val edad: String,
-val correo: String
+        @PrimaryKey var id: Int,
+        @ColumnInfo(name ="nombre") var correo:String
+
         )

@@ -1,16 +1,13 @@
 package com.example.miproyectofinal
 
-import androidx.room.Entity
-import androidx.room.PrimaryKey
+import androidx.room.*
 import java.io.FileDescriptor
 
 
 @Entity
 data class Cargo(
-    @PrimaryKey(true)
-    val id: Int,
-    val nombre: String,
-    val descripcion: String
 
+    @PrimaryKey var id: Int,
+    @ColumnInfo(name ="Descripcion") var descripcion:String
 
 )
